@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 14px;
+  background: linear-gradient(135deg, #71b7e6, #9b599b);
+  height: 100vh;
+}
+
+.container{
+  background-color:rgb(252, 248, 248);
+  width: 800px;
+  padding: 100px;
+  margin: 50px auto 0;
+  border-top: 5px solid #f5ba1a;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+ 
+}
+
+/* .info-labels{
+
+  width: 100px;
+  display: inline-block;
+  margin: 20px;
+  font-weight:800;
+}
+
+.contact-labels{
+  width: 100px;
+  display: inline-block;
+  margin: 20px;
+} */
+
+.firstlastname h1{
+  text-align:left;
+  line-height: 24px;
+  /* padding-bottom: 30px; */
+  margin-bottom: 25px;
+}
+
+.firstlastname {
+  width: 70%;
+  margin: 20px auto;
+  position:inherit;
+  /* border: 2px solid black ; */
+  
+}
+
+
+.firstlastname input{
+width: 20%;
+padding: 10px  5px;
+margin: 10px 0 10px 30px;
+text-align: center;
+}
+
+.firstlastname .Income-1{
+
+  margin-left: 50px;
+
+}
+
+.firstlastname .Income-2{
+  
+  margin-left: 76px;
+
+}
+
+.firstlastname label{
+  font-size: 1.5rem;
+}
+
+.radio-btn{
+  width: 70%;
+  margin-top: 50px;
+  padding-left: 25px;
+  margin: 20px auto;
+  position: relative;
+  /* border: 5px solid black ; */
+   
+  
+}
+
+.radio-btn h1{
+text-align:left;
+margin-bottom: 25px;
+}
+
+
+.radio-btn label{
+  font-size: 1.5rem;
+}
+
+.radio-btn .input-staff{
+  width: 20%;
+  padding: 10px  5px;
+  margin: 10px 0 10px 30px;
+  text-align: center;
+}
+
+
+.radio-btn .Groceries{
+  margin-left: 100px;
+}
+
+
+.radio-btn .water{
+  margin-left: 46px;
+}
+
+
+.radio-btn .travel{
+  margin-left: 76px;
+}
+
+
+.radio-btn .others{
+  margin-left: 134px;
+}
+
+.combo-box{
+  padding-left: 120px;
+  margin-top: 40px;
+  /* border: 5px solid black; */
+}
+
+.combo-box h1{
+  
+  margin-bottom: 25px ;
+}
+
+.combo-box label{
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+select{
+width: 40%;
+padding: 8px 10px 8px 5px;
+font-size: 15px;
+background-color: rgb(255, 255, 255);
+border-radius: 5px;
+}
+
+
+#Rental{
+  width: 70%;
+
+  margin: 20px 20px 20px 110px;
+  position: relative;
+}
+
+#Rental label{
+  font-size: 1.5rem;
+  padding: 10px  5px;
+  margin: 20px auto;
+}
+
+#Rental .input-staff{
+  width: 20%;
+  padding: 10px  5px;
+  margin: 10px 0 10px 30px;
+  text-align: center;
+}
+
+#Buy_prop{
+  width: 70%;
+  margin: 20px 20px 20px 110px;
+  position: relative;
+  /* border: 5px solid black; */
+}
+
+#Buy_prop label{
+  font-size: 1.5rem;
+  padding: 10px  5px;
+  margin: 20px auto;
+}
+#Buy_prop .input-staff{
+  width: 20%;
+  padding: 10px  5px;
+  margin: 10px 0 10px 30px;
+  text-align: center;
+}
+
+form .register-btn{
+text-align: center;
+
+
+}
+
+form button{
+  width: 40%;
+  padding: 8px;
+  margin: 10px 0 10px 60px;
+  justify-content: center;
+  /* border: 4px solid rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+  background-color:rgb(252, 248, 248);
+}

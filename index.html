@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Property Rental/Buy</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form>
+      <div class="firstlastname">
+        <h1>Property Rental Company</h1>
+        <label class="info-labels" for="firstName">Monthly Income: </label>
+        <input type="text" class="Income-1" name="firstName" placeholder=" Income" required>
+        <br />
+        <label class="info-labels" for="lastName"> Tax Deducted: </label>
+        <input type="text" class="Income-2" name="lastName" placeholder="Tax" required>
+      </div>
+
+      <div class="radio-btn">
+        <h1>Monthly Expenditure</h1>
+        <label for="Fun">Groceries</label>
+        <input type="text" name="category" class="input-staff Groceries">
+        <br>
+        <label for="Half">Water & Lights</label>
+        <input type="text" name="category" class="input-staff water">
+        <br>
+        <label for="full">Travel Costs</label>
+        <input type="text" name="category" class="input-staff travel">
+        <br>
+        <label for="full">Others</label>
+        <input type="text" name="category" class="input-staff others">
+      </div>
+
+      <div class="combo-box">
+        <h1> Buying or Renting a property?</h1>
+        <label for="">Rent/Buy:</label>
+        <select id="sel">
+          <option value="">--Select--</option>
+          <option value="Buy">Buying a property</option>
+          <option value="Renting">Renting accommodation</option>
+        </select>
+      </div>
+
+      <div id="Rental" style='display:none;'>
+        <label for="">Monthly Rental</label>
+        <input type="number" name="" class="input-staff">
+      </div>
+
+      <div id="Buy_prop" style='display:none;'>
+        <label for="">Property Price</label>
+        <input type="number" name="" class="input-staff">
+        <br>
+        <label for="">Total Deposit</label>
+        <input type=" number" name="" class="input-staff">
+        <br>
+        <label for="">Interest Rate</label>
+        <input type=" number" name="" class="input-staff">
+        <br>
+        <label for="">Month to Repay</label>
+        <input type=" number" name="" class="input-staff">
+      </div>
+
+      <div class=" register-btn">
+        <button type="submit">Next page</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./Script.js"></script>
+</body>
+
+</html>
