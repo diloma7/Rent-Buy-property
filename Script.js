@@ -17,12 +17,17 @@ $(document).ready(function () {
 });
 
 
-$(function () {
-  $("input[name='chkPassPort']").click(function () {
-    if ($("#chkYes").is(":checked")) {
-      $("#dvPassport").show();
-    } else {
-      $("#dvPassport").hide();
-    }
-  });
+$(document).ready(function () {
+  $('#sel-vehicle').change(function () {
+    $(this).find("option:selected").each(function () {
+      var optionValue = $(this).attr("value");
+      if (optionValue === 'yes') {
+        $('#Buy_vehicle').show();
+      } else {
+        $('#Buy_vehicle').hide();
+      }
+    });
+  }).change();
 });
+
+

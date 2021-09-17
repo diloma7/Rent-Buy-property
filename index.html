@@ -36,6 +36,7 @@
         <label for="full">Others</label>
         <input type="text" name="category" class="input-staff others">
       </div>
+      <!--===========================================================================================================-->
 
       <div class="combo-box">
         <h1> Buying or Renting a property?</h1>
@@ -54,38 +55,51 @@
 
       <div id="Buy_prop" style='display:none;'>
         <label for="">Property Price</label>
-        <input type="number" name="" class="input-staff">
+        <input type="number" name="" class="price">
         <br>
         <label for="">Total Deposit</label>
-        <input type=" number" name="" class="input-staff">
+        <input type=" number" name="" class="deposit">
         <br>
         <label for="">Interest Rate</label>
-        <input type=" number" name="" class="input-staff">
+        <input type=" number" name="" class="rate">
         <br>
         <label for="">Month to Repay</label>
-        <input type=" number" name="" class="input-staff">
+        <input type=" number" name="" class="month">
       </div>
 
-      <div class="vehicle">
-        <span>Do you want to purchase a vehicle?</span>
-        <label for="chkYes">
-          <input type="radio" id="chkYes" name="chkPassPort" />
-          Yes
-        </label>
-        <label for="chkNo">
-          <input type="radio" id="chkNo" name="chkPassPort" />
-          No
-        </label>
-      </div>
-      <!-- <hr /> -->
-      <div id="dvPassport" style="display: none">
-        Passport Number:
-        <input type="text" id="txtPassportNumber" />
+      <!--========= purchase a vehicle or not div ==================== -->
+
+      <div class="combo-vehicle">
+        <!-- <h1> Buying or Renting a property?</h1> -->
+        <label for="">Want a Vehicle?:</label>
+        <select id="sel-vehicle">
+          <option value="">--Select--</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
       </div>
 
-      <div class=" register-btn">
+      <div id="Buy_vehicle" style='display:none;'>
+        <label for="">Model</label>
+        <input type="text" name="" class=" model">
+        <br>
+        <label for="">Purchase price</label>
+        <input type=" number" name="" class=" Vehicle_price">
+        <br>
+        <label for="">Total Deposit</label>
+        <input type=" number" name="" class=" VDeposit">
+        <br>
+        <label for="">Interest Rate</label>
+        <input type=" number" name="" class="VInterest">
+        <br>
+        <label for="">Insurance Premium</label>
+        <input type=" number" name="" class=" VPremium">
+      </div>
+
+
+      <!-- <div class=" register-btn">
         <button type="submit">Next page</button>
-      </div>
+      </div> -->
     </form>
   </div>
 
