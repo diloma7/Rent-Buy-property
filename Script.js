@@ -15,3 +15,14 @@ $(document).ready(function () {
     });
   }).change();
 });
+
+
+$(function () {
+  $("input[name='chkPassPort']").click(function () {
+    if ($("#chkYes").is(":checked")) {
+      $("#dvPassport").show();
+    } else {
+      $("#dvPassport").hide();
+    }
+  });
+});

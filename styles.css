@@ -187,9 +187,12 @@ border-radius: 5px;
 
 form .register-btn{
 text-align: center;
-
-
 }
+
+.vehicle{
+  border: 5px solid black;
+}
+
 
 form button{
   width: 40%;
