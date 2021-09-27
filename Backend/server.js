@@ -1,25 +1,27 @@
 const express = require('express')
 const app = express()
-const port = 3020
-const bodyParser = require('body-parser');
-const request = require('request')
-const MongoClient = require('mongodb').MongoClient;
+const port = 3011
+require('./Models/DB')
+var bodyParser = require('body-parser')
+const controlling = require('./controllers/propertyController')
 
-MongoClient.connect('mongodb://localhost:27017/FIT3160', function (err, client) {
-  if (err) throw err;
 
-  let db = client.db('FIT3160');
-  db.collection('semester01').find().toArray(function (err, result) {
-    if (err) throw err;
-    console.log(result);
-    client.close();
-  });
-});
+app.set('view engine', 'ejs');
+app.set('views', '../frontend');
+app.use('/public', express.static('../public'));
+app.use(express.json())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', function (req, res) {
-  res.render('index', { weather: null, error: null });
+
+
+app.get('/', (req, res) => {
+  res.render('index');
 })
+
+app.use('/propertyRequest', controlling)
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
